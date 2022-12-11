@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #06efeb, #00def9, #00cbff, #00b6ff, #009eff, #008dff, #007bff, #0067fc, #0058fd, #0046fd, #0c30fb, #2b00f7);
+    background-size: cover;
+    color: #FAF9F6;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.container>*{
+    margin: 10px;
+    padding: 10px;
+}
+
+.player-choice, .computer-choice {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+}
+
+.choices {
+    width: 240px;
+    height: 80px;
+    background-color: yellow;
+}
+
+.choices img {
+    width: 80px;
+    height: 80px;
+}
+

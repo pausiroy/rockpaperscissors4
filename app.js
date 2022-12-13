@@ -1,6 +1,6 @@
 let playerScoreText = document.querySelector(".player-score");
 let computerScoreText = document.querySelector(".computer-score");
-
+const reload = document.querySelector(".reload");
 let player;
 let playerScore = 0;
 let computer;
@@ -57,8 +57,21 @@ function selectChoice(){
     playerScoreText.innerText = playerScore;
     computerScoreText.innerText = computerScore
 
+    if(playerScore == 10 || computerScore == 10) {
+        reload.style.display = "block";
+    }
+
 }
+
+reload.addEventListener("click", restartGame);
 
 //Create a reload function
 
-
+function restartGame() {
+    playerScoreText.innerText = "";
+    computerScoreText.innerText = "";
+    document.querySelector(".computer-choice").src = "";
+    document.querySelector(".player-choice").src = "";
+    playerScore = 0;
+    computerScore = 0;
+}
